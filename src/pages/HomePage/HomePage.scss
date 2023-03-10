@@ -1,0 +1,234 @@
+.wrapper {
+  padding: 60px 40px;
+  background-color: rgba(214, 216, 234, 0.6);
+}
+.container {
+  max-width: 1600px;
+  & > div:last-child > .box:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+.box {
+  padding: 40px;
+  background-color: #fff;
+  border-radius: 16px;
+}
+.title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 46px;
+  color: $dark-blue;
+  letter-spacing: 0;
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+.box__subtitle {
+  font-size: 20px;
+  font-family: 'Poppins';
+  line-height: 30px;
+  color: $grey-text;
+  margin-bottom: 20px;
+}
+
+.section {
+  margin-bottom: 50px;
+}
+.section__title,
+.box__title {
+  font-weight: 500;
+  line-height: 34px;
+  color: $dark-blue;
+  margin-top: 0;
+}
+.section__subtitle {
+  font-size: 14px;
+  line-height: 21px;
+  color: $grey-text;
+  margin-bottom: 24px;
+  margin-top: 5px;
+}
+
+.text-gray {
+  // for checkbox
+  color: #4b4e68 !important;
+}
+.bg-gray {
+  // for checkbox
+  background: #4b4e68 !important;
+}
+
+.custom-radio-input {
+  padding: 12px 20px;
+  background-color: rgba(239, 240, 245, 0.4);
+  border-radius: 16px;
+  width: 100%;
+}
+
+.cart {
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__img-wrapper {
+    position: relative;
+  }
+  &__item-name {
+    font-size: 16px;
+    line-height: 26px;
+    color: $dark-blue;
+    margin-left: 20px;
+  }
+  &__item-price {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 26px;
+    color: $dark-blue;
+  }
+  &__item-col:first-child {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.discount {
+  margin-top: 30px;
+  display: flex;
+  &__col:first-of-type {
+    flex-grow: 1;
+    margin-right: 24px;
+  }
+}
+
+.totals {
+  margin-top: 30px;
+  .total {
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    &__name {
+      font-size: 16px;
+      line-height: 26px;
+      color: $grey-text;
+    }
+    &__price {
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 26px;
+      color: $dark-blue;
+    }
+    &__divider {
+      height: 1px;
+      background-color: #d6d8ea;
+      margin: 10px 0;
+    }
+    &:nth-of-type(3) {
+      margin-bottom: 0;
+    }
+    &:last-of-type {
+      margin-bottom: 0;
+      .total__name {
+        color: $dark-blue;
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+.secure-guarantee {
+  text-align: center;
+  p:last-child {
+    display: flex;
+    justify-content: center;
+    img:not(:last-child) {
+      margin-right: 7px;
+    }
+  }
+}
+
+.jewellery-club {
+  &__title {
+    font-size: 18px;
+    line-height: 27px;
+    color: $dark-blue;
+    margin-top: 0;
+    font-weight: 600;
+    margin-bottom: 12px;
+  }
+  &__subtitle {
+    color: $grey-text;
+    line-height: 24px;
+    font-size: 14px;
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+  &__benefits {
+    list-style-type: none;
+    margin: 0;
+    padding-left: 0;
+    li {
+      display: flex;
+      align-items: center;
+      margin-bottom: 4px;
+
+      img {
+        margin-right: 10px;
+      }
+      span {
+        line-height: 24px;
+        color: $grey-text;
+      }
+    }
+  }
+}
+
+.payment-methods {
+  &__agreetion {
+    margin-bottom: 30px;
+  }
+  &__submit {
+    width: 100%;
+  }
+}
+.payment-method {
+  margin-bottom: 30px;
+  &__top {
+    position: relative;
+  }
+  &__body {
+    padding: 0 20px 30px 20px;
+    background-color: rgba(239, 240, 245, 0.4);
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+  }
+  &__logos {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+  }
+  &:last-of-type {
+    margin-bottom: 22px;
+  }
+}
+
+.color-white {
+  color: #fff !important;
+}
+.bg-white {
+  background: #fff !important;
+}
+.text-dark {
+  font-weight: 600;
+  color: $dark-blue;
+}
+
+.dark-blue-button {
+  border-radius: 10px;
+  background-color: $dark-blue;
+  padding: 18px 40px;
+  font-weight: 500;
+  line-height: 20px;
+  color: #ffffff;
+}

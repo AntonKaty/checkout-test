@@ -1,2 +1,12 @@
 // app global css in SCSS form
 @import url('../assets/fonts/Poppins/stylesheet.css');
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: 'Poppins';
+  line-height: initial; // overrided somewhere by quasar
+  letter-spacing: 0; // overrided somewhere by quasar
+}
